@@ -27,233 +27,48 @@
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <body>
-  <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"  >
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="images/montidoc.png" style="width:50px; height:auto"  alt="logo"/>  </a>
-      </div>
-      <div class="navbar-menu-wrapper">
+  <div class="container-fluid px-0" style="background-image: url('images/ban.png') ; background-size: cover;  ; height:100vh" >
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5">
+  			<a class="navbar-brand" href="#">
+  				<img src="images/logo.png" style="width: 50px; height: auto"/>
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  				<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+  				<ul class="navbar-nav ml-auto d-flex align-items-center">
+  					<li class="nav-item">
+  						<a class="nav-link px-3" href="index.html" target="_blank">FAQ</a>
+  					</li>
+            <li class="nav-item dropdown ml-3">
+              <div class="btn-group">
+                <a href="index.html" class="btn btn-primary btn-sm">Pas de la santé ?</a>
+              </div>
+            </li>
+  					<li class="nav-item">
+  						<a class="nav-link px-3" id="features-link" href="#">Se connecter</a>
+  					</li>
 
-        <ul class="navbar-nav navbar-nav-right">
+  				</ul>
+  			</div>
+      </nav>
+      <div class="urbanui-demo-footer mt-5 text-center">
+				<div class="btn-group dropup"style="color: #c4487f ; margin-top: 150px;" >
+					<h1 class="nav-link" style="  font-size: 50px ; font-weight: 900;" >Trouve le docteur qu'il te faut !</h1>
+				</div>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
 
-          <ul class="navbar-nav mr-lg-2">
-            <div class="form-group1 d-flex">
-              <input type="text" class="form-control" placeholder="Nom" >
-              <button type="submit" class="btn btn-primary ml-3">  <i class="ion ion-md-search"></i></button>
-            </div>
-          </ul>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center"  href="index.html">
-              <span><i class="mdi mdi-account-multiple"></i> les docteurs</span>
-            </a>
-
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="index.html" >
-             <span> <i class="mdi mdi-table-column-plus-after"></i> specialisation</span>
-           </a>
-
-         </li>
-         <li class="nav-item nav-profile dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-            <span class="nav-profile-name"> <i class="mdi mdi-account-key"></i> Connexion</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-            <a class="dropdown-item">
-              <i class="mdi mdi-login-variant"></i>
-              login
-            </a>
-            <a class="dropdown-item">
-              <i class="ion ion-md-log-out text-primary"></i>
-              sign-in
-            </a>
-          </div>
-        </li>
-        <button type="button" class="btn btn-primary btn-sm" style="margin-top: 5px;" >Nouveau Pratient </button>
-
-      </ul>
-    </nav>
-    <!-- partial -->
-    <div class="ton" style="background-image: url('images/156.jpg');background-size: cover; margin-top:50px; height:700px;" >
-      <div class="row"   >
-        <div class="col-md-6" style="margin-top: 100px ;margin-left: 50px; color: white ">
-
-          <h2 class="display-1"> <p class="mb-0 extra-large-title mt-1" > MONTIDOC </p> </h2>
-          <br>
-        <div class="card-body">
-              <blockquote class="blockquote blockquote-primary">
-                <p class="mb-0 extra-large-title mt-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
-            </div>
-        </div>
-        <div class="col-md-4" style="margin-top: 272px" >
-          <button type="button" class="btn btn-outline-secondary btn-lg">btn-lg</button>
-          <button type="button" class="btn btn-primary btn-lg ">
-            <i class="ion ion-md-person"></i>
-            Block buttons
-          </button>
-        </div>
-      </div>
-      <div class="content" style="margin-top: 100px" >
-        <center><h2 class="display-1"> <p class="mb-0 extra-large-title mt-1" > RECHERCHE </p> </h2></center>
-      <div class="form-group"  >
-        <div class="input-group" style="background-color: white">
-          <div class="input-group-prepend">
-            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-primary" type="button">Search</button>
             </div>
           </div>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button">
-          <button type="submit" class="btn btn-primary ml-3">  <i class="ion ion-md-search"></i></button>
         </div>
-      </div>
+			</div>
     </div>
 
-
-  </div>
-  <div class="row"  >
-
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-
-                  <center>
-                    <p class="mb-0 extra-large-title mt-1" style="color: black" > Specialisation </p>
-                    <br>
-                    <div class="col-10">
-                    <div class="row portfolio-grid">
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/1.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Photography</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/2.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Lifestyle</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/3.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Tech Geeks</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/4.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Explore World</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/5.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Travel</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/6.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Colors</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/7.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Through Nature</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/8.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>World</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/9.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Cultures</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/10.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Habits</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/11.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Being yourself</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-                        <figure class="effect-text-in">
-                          <img src="images/samples/300x300/12.jpg" alt="image"/>
-                          <figcaption>
-                            <h4>Nature</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-
-                    </div>
-                  </div>
-                  </center>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer" style="margin-right: -5px; margin-left: -5px" >
-        <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
-          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ion ion-md-heart-empty"></i></span>
-        </div>
-      </footer>
   <!-- container-scroller -->
   <!-- base:js -->
 
