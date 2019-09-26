@@ -13625,7 +13625,6 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-    background: linear-gradient(180deg, #ffffff 0%,#4e2d6a   100%) !important;
   background-clip: border-box;
   border: 1px solid #e7eaed;
   border-radius: 0;
@@ -15496,7 +15495,7 @@ a.close.disabled {
 }
 
 .bg-primary, .settings-panel .color-tiles .tiles.primary {
-  background-color: #fc4a9e !important;
+
 }
 
 a.bg-primary:hover, .settings-panel .color-tiles a.tiles.primary:hover, a.bg-primary:focus, .settings-panel .color-tiles a.tiles.primary:focus,
@@ -19476,7 +19475,7 @@ body,
 html {
   overflow-x: hidden;
   padding-right: 0 !important;
-  background-color: #e0e0e0;
+
 }
 
 *:-moz-full-screen,
@@ -19888,7 +19887,7 @@ code {
 }
 
 .layouts-preview-main-wrapper {
-  background: #efefef;
+
 }
 
 .layouts-preview-main-wrapper .layouts-preview-wrapper .preview-item a {
@@ -19906,6 +19905,7 @@ code {
 
 .layouts-preview-main-wrapper .layouts-preview-wrapper .preview-item a .item-title {
   height: 70px;
+  box-shadow: 50px 9px 60px 0px rgba(85, 128, 255, 0.2);
   margin-top: -69px;
   background: white;
   border-radius: 0 0 4px 4px;
@@ -23990,7 +23990,7 @@ dl li {
   position: relative;
   float: left;
   overflow: hidden;
-  width: 100%;
+
   background: #fc4a9e;
   text-align: center;
   cursor: pointer;
