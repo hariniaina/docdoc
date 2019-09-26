@@ -19510,7 +19510,6 @@ code {
   background: #1f2021;
   color: #8a8a8a;
   padding: 1.5rem 2rem;
-  margin: 0 1.875rem 0 1.875rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
@@ -29841,5 +29840,6 @@ div.tagsinput span.tag a {
     display: none;
   }
 }
+
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
