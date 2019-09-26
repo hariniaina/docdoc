@@ -1,0 +1,50 @@
+.portfolio-grid{
+	/*border: 2px solid red;*/
+	height: 350px;
+	width: 90%;
+	overflow-x: hidden;
+	margin: 2px auto;
+	padding: 0 20px;
+}
+
+.slidesBox{
+	height: 300px;
+	width: 270px;
+	margin: auto 20px auto 0;
+}
+
+.portfolio-grid figure.effect-text-in{
+	height: 100%;
+	width: 100%
+}
+
+.sliders{
+	margin: auto;
+	flex-wrap: initial;
+	height: 320px;
+	width: auto;
+}
+
+.move{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgba(0, 0, 0, .4);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .4);
+	cursor: pointer;
+	font-size: 32px;
+	color: white;
+	top: 360px;
+}
+
+.move:nth-child(3){
+	right: 65px;
+}
+
+.move:nth-child(2){
+	left: 70px;
+}
