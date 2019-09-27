@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    <div class="container-fluid px-0" style="background-image: url('images/app-banner.png') ; background-size: cover; height:800px">
+    <div id="home" class="px-0">
         <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5">
-            <a class="navbar-brand" href="#">
-                <img src="images/log.png" style="width: 50px; height: auto" />
+            <a class="navbar-brand logo" href="#">
+                <img src="images/log.png" style="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,15 +42,45 @@
                             <a href="index.html" class="btn btn-primary btn-sm">Professionel de la santé ?</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" id="features-link" href="#">Se connecter</a>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                            Se connecter
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                            <p class="spTitle"> Docteur </p>
+                            <a class="dropdown-item" href="signup.html">
+                                <span> <i class="ion ion-md-clipboard"></i> sign up </span>
+                            </a>
+                            <hr>
+                            <p class="spTitle"> Patients </p>
+                            <a class="dropdown-item" href="login.html">
+                                <span> <i class="ion ion-md-clipboard"></i> sign up </span>
+                            </a>
+                            <a class="dropdown-item" href="login.html">
+                                <span> <i class="ion ion-md-log-in"></i> log in </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="onPhone">
+                        <p class="spTitle"> Docteur </p>
+                        <a class="dropdown-item" href="signup.html">
+                            <span> <i class="ion ion-md-clipboard"></i> sign up </span>
+                        </a>
+                        <hr>
+                        <p class="spTitle"> Patients </p>
+                        <a class="dropdown-item" href="login.html">
+                            <span> <i class="ion ion-md-clipboard"></i> sign up </span>
+                        </a>
+                        <a class="dropdown-item" href="login.html">
+                            <span> <i class="ion ion-md-log-in"></i> log in </span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="urbanui-demo-footer mt-5 text-center">
-            <div class="btn-group dropup" style="color: #ffffff ; margin-top: 100px;">
-                <h1 class="nav-link" style=" font-size: 50px ; font-weight: 900; ">Trouve le docteur qu'il te faut !</h1>
+        <div class="urbanui-demo-footer">
+            <div class="btn-group dropup">
+                <h1 class="nav-link">Trouve le docteur qu'il te faut !</h1>
             </div>
             <div class="form-group">
                 <div class="input-group">
@@ -63,14 +93,12 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid px-0" style="margin-top: 20px; ">
+    <div id="onePage" class="px-0">
         <div class="content-wrapper layouts-preview-main-wrapper">
             <div>
-                <div class="btn-group dropup" style="color: black ">
-                    <center>
-                        <h1 class="nav-link" style=" margin-left: 400px ; font-size: 50px ; font-weight: 900;">Pro de la santé</h1>
-                        <h1 class="nav-link" style="margin-left: 250px ;  font-size: 30px ; font-weight: 900;">rejoinez votre communauté & appriez les avantages</h1>
-                    </center>
+                <div class="btn-group dropup">
+                    <h1 class="nav-link">Pro de la santé</h1>
+                    <h2 class="nav-link">rejoinez votre communauté & appriez les avantages</h2>
                 </div>
                 <div class="row layouts-preview-wrapper" style="margin-top: 50px">
                     <div class="col-md-4 grid-margin">
@@ -138,169 +166,259 @@
             </div>
         </div>
     </div>
-    <div class="row" style="background-image: url('images/app_team.png') ; background-size: cover; height: 700px">
-        <div class="col-md-12">
-            <div class="btn-group dropup" style="color: #ffffff ; margin-top: 150px">
-                <center>
-                    <h1 class="nav-link" style=" margin-left: 180% ; font-size: 50px ; font-weight: 900;">Temionials</h1>
-                </center>
+    <div id="testimoniaux" class="px-0">
+        <div class="col-md-12" style="height: min-content; width: 100vw">
+            <div class="btn-group dropup" style="margin-top: 150px; width: 100%">
+                <h1 class="nav-link">Temionials</h1>
             </div>
             <div class="row portfolio-grid" id="slides">
-              <div class="row sliders">
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/1.jpg" alt="image" />
-                        <figcaption>
+                <div class="row sliders">
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/1.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
                             <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/2.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Lifestyle</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/2.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/3.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Tech Geeks</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/3.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/4.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Explore World</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/4.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/5.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Travel</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/5.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/6.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Colors</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/6.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/7.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Through Nature</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/7.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/8.jpg" alt="image" />
-                        <figcaption>
-                            <h4>World</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/8.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/9.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Cultures</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/9.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/10.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Habits</h4>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <div class='slidesBox'>
+                            <figure class="">
+                                <div class="imgBox">
+                                    <div class="box">
+                                        <img src="images/samples/300x300/10.jpg" alt="image" />
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="msgBox">
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
+                        </div>
+                    </div>
                 </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/11.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Being yourself</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
+                <div class="move moveLeft">
+                    < 
+                </div> 
+                <div class="move moveRight">
+                        >
                 </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/12.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Nature</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/13.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Routines</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/14.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Life</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class='slidesBox'>
-                    <figure class="effect-text-in">
-                        <img src="images/samples/300x300/15.jpg" alt="image" />
-                        <figcaption>
-                            <h4>Vision</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </figcaption>
-                    </figure>
-                </div>
-              </div>
-              <div class="move moveLeft">
-                <
-              </div>
-              <div class="move moveRight">
-                >
-              </div>
             </div>
-            <!-- content-wrapper ends -->
-            <!-- partial:../../partials/_footer.html -->
-            <footer class="footer">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
-                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ion ion-md-heart-empty"></i></span>
-                </div>
-            </footer>
-            <!-- partial -->
+        </div>
+        <div class="btn-group dropup" style="color: #ffffff ; width: 100%">
+            <h2 class="nav-link">Ils nous font confiance</h2>
         </div>
     </div>
+    <div id="follow" class="px-0">
+        <div class="content-wrapper layouts-preview-main-wrapper">
+            <div>
+                <div class="btn-group dropup">
+                    <center>
+                        <h1 class="nav-link">Rejoindre Docdoc</h1>
+                        <h2 class="nav-link">entant que docteur</h2>
+                    </center>
+                </div>
+                <div class="row layouts-preview-wrapper" style="margin-top: 50px">
+                    <div class="col-md-4 grid-margin">
+                    </div>
+                    <div class="col-md-4 grid-margin">
+                        <div class="p-3 preview-item">
+                            <a href="demo/vertical-default-dark/index.html" target="_blank">
+                                <div class="item-title">
+                                    <button type="button" class="btn btn-outline-primary btn-icon-text">
+                                        <i class="ion ion-md-key"></i>
+                                        Formulaire
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-margin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div id="features" class="bg-primary text-white">
+            <h4 class="mb-5 text-center py-3">Montidoc</h4>
+            <div class="row">
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-body icon-lg mr-2"></i>
+                        Mention légales
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-phone-portrait icon-lg mr-2"></i>
+                        Fully responsive
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-logo-chrome icon-lg mr-2"></i>
+                        spécialité
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-calculator icon-lg mr-2"></i>
+                        FAQ
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-stats icon-lg mr-2"></i>
+                        Policy
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-card icon-lg mr-2"></i>
+                        Condition générale d'utilisation
+                    </h6>
+                </div>
+                <div class="col-md-3 mb-5 px-5">
+                    <h6>
+                        <i class="ion ion-md-hammer icon-lg mr-2"></i>
+                        Tools
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2019 <a href="index.html" target="_blank">Montidoc</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> <img src="images/log.png" alt="" style="width: 30px; height: auto"> </span>
+        </div>
+    </footer>
     <!-- container-scroller -->
     <!-- base:js -->
     <!-- base:js -->

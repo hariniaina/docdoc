@@ -13430,6 +13430,7 @@ input[type="button"].btn-block {
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
+    width: 300px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -19510,7 +19511,6 @@ code {
   background: #1f2021;
   color: #8a8a8a;
   padding: 1.5rem 2rem;
-  margin: 0 1.875rem 0 1.875rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
@@ -27902,7 +27902,6 @@ div.tagsinput span.tag a {
   background: url("images/auth/login-bg.jpg");
   background-size: cover;
 }
-
 .auth .register-half-bg {
   background: url("images/auth/register-bg.jpg");
   background-size: cover;
@@ -28035,6 +28034,7 @@ div.tagsinput span.tag a {
   width: 100%;
   min-height: 100vh;
   padding-top: 0;
+  background-color: transparent;
 }
 
 .main-panel {
@@ -29841,5 +29841,6 @@ div.tagsinput span.tag a {
     display: none;
   }
 }
+
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
