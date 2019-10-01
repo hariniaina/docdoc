@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="vendors/ionicons/css/ionicons.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
+  <!-- font awesome -->
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <!-- font awesome -->
   <!-- inject:css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/log2.png" />
 </head>
-
 <body>
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -30,45 +32,22 @@
             <div class="auth-form-transparent text-left p-1 over">
               <div class="brand-logo">
                 <img src="images/log.png" alt="logo">
+                <span class="titre">DOCTEUR</span>
               </div>
-              <h4>New here?</h4>
-              <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
               <form class="pt-3">
                 <div class="form-group1">
-                  <label>Username</label>
+                  <!-- <label for="exampleInputEmail">Username</label> -->
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
                         <i class="ion ion-md-person text-primary"></i>
                       </span>
                     </div>
-                    <input type="text" class="form-control form-control-lg border-left-0" placeholder="Username">
+                    <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Username">
                   </div>
                 </div>
                 <div class="form-group1">
-                  <label>Email</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend bg-transparent">
-                      <span class="input-group-text bg-transparent border-right-0">
-                        <i class="ion ion-md-mail text-primary"></i>
-                      </span>
-                    </div>
-                    <input type="email" class="form-control form-control-lg border-left-0" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group1">
-                  <label>Country</label>
-                  <select class="form-control form-control-lg" id="exampleFormControlSelect2">
-                    <option>Country</option>
-                    <option>United States of America</option>
-                    <option>United Kingdom</option>
-                    <option>India</option>
-                    <option>Germany</option>
-                    <option>Argentina</option>
-                  </select>
-                </div>
-                <div class="form-group1">
-                  <label>Password</label>
+                  <!-- <label for="exampleInputPassword">Password</label> -->
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -78,26 +57,27 @@
                     <input type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password">
                   </div>
                 </div>
-                <div class="mb-4">
+                <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
                       <input type="checkbox" class="form-check-input">
-                      I agree to all Terms & Conditions
+                      Enregistrer
                     </label>
                   </div>
+                  <a href="#" class="auth-link text-black changColor">Mots de passe oublé</a>
                 </div>
-                <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="/index.html">SIGN UP</a>
+                <div class="my-3">
+                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html">LOGIN</a>
                 </div>
-                <div class="text-center mt-4 font-weight-light">
-                  Already have an account? <a href="login.html" class="text-primary">Login</a>
+                <div class="text-right mt-4 font-weight-light">
+                  <a href="logn.html" class="text-dark changColor">Etes-vous un patient ?</a>
                 </div>
               </form>
             </div>
           </div>
           <div class="col-lg-6 rRight">
-            <img style="height: 140%; width: auto" src="images/auth/register-bg.jpg" alt="">
-            <p class="copyright">Copyright &copy; 2018  All rights reserved.</p>
+            <img src="images/carousel/banner_1.jpg" alt="" style="width: auto; height: 140% ;" >
+            <p class="text-white copyright">Copyright &copy; 2018  All rights reserved.</p>
           </div>
         </div>
       </div>
