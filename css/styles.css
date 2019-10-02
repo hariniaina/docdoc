@@ -252,7 +252,7 @@ body{
 	margin-top: 14%;
 }
 
-#home h1, #onePage h1{
+#home h1, #onePage h1, #follow h1{
 	font-size: 50px;
 	font-weight: 900; 
 }
@@ -305,13 +305,13 @@ body{
 	background-size: cover;
 	height: 750px
 }
-
+/*
 #follow h1.nav-link{
 	color: black;
 	font-size: 50px;
 	font-weight: 900;
 }
-
+*/
 #features{
 	margin: 0 auto;
 }
@@ -550,9 +550,9 @@ a:hover{
 
 .anim{
 	background-color: #180e60;
-	position: absolute;
-	top: 260px;
-	right: 150px;
+	position: relative;
+	top: 150px;
+	right: -200px;
 	border-radius: 50%;
 	height: 103px;
 	width: 103px;
@@ -567,12 +567,22 @@ a:hover{
 }
 
 .home2{
-	height: 613px!important;
+	margin: auto;
+	height: 400px!important;
+	display: flex;
 }
 
+/*.home2 * {
+	border: 2px solid red;
+}*/
+
 #choice{
-	height: 560px;
+	height: 580px;
 	background-color: white;
+	background: url(../images/ban.png);
+	background-size: cover;
+	background-position: center top -80px;
+	background-attachment: scroll;
 }
 
 .title h2{
